@@ -917,6 +917,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
+--- !u!1 &2123716540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3195929709402914400, guid: a85833dcd7833c5479f7fb4416b26622,
+    type: 3}
+  m_PrefabInstance: {fileID: 4471627722737797790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2123716544
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123716540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &60889539378096550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,6 +1199,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2059771803, guid: a85833dcd7833c5479f7fb4416b26622, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059771803, guid: a85833dcd7833c5479f7fb4416b26622, type: 3}
       propertyPath: detectionDistance
       value: 3
       objectReference: {fileID: 0}
@@ -1195,7 +1219,7 @@ PrefabInstance:
     - target: {fileID: 2815288045872587994, guid: a85833dcd7833c5479f7fb4416b26622,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000009536743
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 2815288045872587994, guid: a85833dcd7833c5479f7fb4416b26622,
         type: 3}
