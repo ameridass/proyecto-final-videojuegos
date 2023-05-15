@@ -5,6 +5,12 @@ using StarterAssets;
 public class Gun : MonoBehaviour
 {
     private StarterAssetsInputs _input;
+    [SerializeField]
+    private GameObject BulletPrefab;
+    [SerializeField]
+    private GameObject BulletStartShoot;
+    [SerializeField]
+    private float bulletSpeed = 600;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +29,9 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("Shooting!");
+        GameObject bullet = Instantiate(BulletPrefab, BulletStartShoot.transform.position, transform.rotation);
+        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+        Destroy(bullet, 1);
+
     }
 }
