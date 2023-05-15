@@ -1266,6 +1266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DirtyEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8210560591645802144, guid: a85833dcd7833c5479f7fb4416b26622,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 713b772b1d0f74133a8ce94956352a48, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a85833dcd7833c5479f7fb4416b26622, type: 3}
 --- !u!1001 &4517919539247376462
