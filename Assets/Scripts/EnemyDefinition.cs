@@ -19,6 +19,7 @@ public class EnemyDefinition : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        animator.SetBool("isDead", false);
     }
 
     // Update is called once per frame
@@ -34,7 +35,8 @@ public class EnemyDefinition : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            animator.SetBool("isDead", true);
+            Die();
         }
     }
     public void comportamiento()
@@ -100,6 +102,12 @@ public class EnemyDefinition : MonoBehaviour
     {
         animator.SetBool("attack", false);
         attack = false;
+    }
+
+    public void Die()
+    {
+        
+        Destroy(gameObject, 5f);
     }
 
 }
