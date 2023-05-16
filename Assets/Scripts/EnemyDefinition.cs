@@ -25,8 +25,12 @@ public class EnemyDefinition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        comportamiento();
-       
+        
+        if (health > 0)
+        {
+            comportamiento();
+        }
+
     }
 
     public void TakeDamage(float damage)
@@ -36,11 +40,14 @@ public class EnemyDefinition : MonoBehaviour
         if (health <= 0)
         {
             animator.SetBool("isDead", true);
+
             Die();
         }
     }
     public void comportamiento()
+
     {
+        
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         if (distanceToTarget > detectionDistance)
