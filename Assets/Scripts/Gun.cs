@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
     [SerializeField]
     private GameObject BulletStartShoot;
     [SerializeField]
-    private float bulletSpeed = 600f;
+    private float bulletSpeed = 20f;
     
     private Transform firePoint;
     // Start is called before the first frame update
@@ -106,6 +106,10 @@ public class Gun : MonoBehaviour
 
                 enemyTarget.TakeDamage(10);
                 Debug.Log("Enemy healt " + enemyTarget.health);
+                Destroy(bullet, 1.0f);
+            } else
+            {
+                Destroy(bullet, 2.0f);
             }
         }
     }
