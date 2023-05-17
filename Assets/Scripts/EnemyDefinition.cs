@@ -39,6 +39,9 @@ public class EnemyDefinition : MonoBehaviour
 
         if (health <= 0)
         {
+            endAttack();
+            animator.SetBool("walk", false);
+            animator.SetBool("run", false);           
             animator.SetBool("isDead", true);
 
             Die();

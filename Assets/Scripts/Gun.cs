@@ -102,7 +102,7 @@ public class Gun : MonoBehaviour
             if (hit.collider.CompareTag("Enemy"))
             {
                 // Acciones a realizar si el Raycast golpeó un objeto con la etiqueta "Enemy"
-                Debug.Log("Golpeaste a: " + hit.collider.name);
+                //Debug.Log("Golpeaste a: " + hit.collider.name);
 
                 enemyTarget.TakeDamage(10);
                 Debug.Log("Enemy healt " + enemyTarget.health);
